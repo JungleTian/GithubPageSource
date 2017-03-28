@@ -73,5 +73,5 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/JungleTian/JungleTian.github.io
+  repository: https://github.com/jungletian/JungleTian.github.io
 branch: master
