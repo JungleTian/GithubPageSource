@@ -13,7 +13,7 @@ photos: [https://ws3.sinaimg.cn/large/006tNc79ly1fmhrt0pi0zj3074074dg5.jpg]
 
 adb 命令 | 描述
 ---|---
-`adb logcat -v time > log.txt` | 打印log并保存到文件里
+`adb logcat -v time > log.txt` | 打印 log 并保存到文件里
 `adb shell dumpsys activity top` | 查看最顶层 Activity 元素
 `adb shell dumpsys activity activities` | 查看栈内的信息 参数可选为 `sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'`
 `adb shell dumpsys activity grep -i run` | 查看正在运行的 Activity
@@ -33,7 +33,7 @@ adb 命令 | 描述
 <!--more-->
 
 ### **常用 app 快捷键**
-| 快捷键                                      | 描述                    |
+| 命令                                      | 描述                    |
 | ---------------------------------------- | --------------------- |
 | iterm2 : `ctrl + [ or ]`                  | 切换 pane               |
 | iterm2 : `ctrl + k`                      | 命令行光标之后的              |
@@ -62,6 +62,17 @@ adb 命令 | 描述
 | `ctrl + tag`                             | 切换窗口并选中         |
 | `studio diff <file_name_1> <file_name_2>` | AS 文件对比         |
 | `code --diff <file_name_1> <file_name_2>` | vs code 文件对比    |
+
+### **Linux 系统常用命令 **
+
+命令 | 描述
+---|---
+`ln -s <source_file> <link_file_name>` | 创建快捷方式(-s 软链接 默认是硬链接)
+`cat <file_name>` | 查看文件
+`cat <file_name> <file_name2> > <file_name3>` | 将两个文件内容复制到另外一个文件
+`touch <file_name>` | 创建文件
+`grep -n "^word"/"word$" <file_name>` | 在指定文件里面搜索单词(-n: 显示行数；-v：不包含 `word` 的单词)
+`cp <folder_name> <folder_name2> -r ` | 拷贝文件夹
 
 ### **调试技巧**
 
